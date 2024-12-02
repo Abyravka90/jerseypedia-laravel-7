@@ -25,14 +25,14 @@
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('fontawesome/css/all.min.css') }}">
 
-
-    <livewire : styles/>
-    <livewire : script/>
+    @livewireStyles
+    @livewireScripts
 </head>
 <body>
     <div id="app">
-        <livewire:navbar/>
+        <livewire:navbar>
         <main class="py-4">
             @yield('content')
         </main>

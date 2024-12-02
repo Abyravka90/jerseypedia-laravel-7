@@ -55,3 +55,7 @@ body {
 .breadcrumb .active{
     font-weight: bold;
 }
+
+.btn-dark{
+    border-radius: 10px;
+}

@@ -11,7 +11,21 @@
                   </nav>
             </div>
         </div>
-        <h2>List<strong>Jersey</strong></h2>
+        <div class="row">
+            <div class="col-md-9">
+                <h2>List<strong>Jersey</strong></h2>
+            </div>
+            <div class="col-md-3">
+                <div class="input-group mb-3">
+                <input wire:model="search" type="text" class="form-control" placeholder="Search . . ." aria-label="Search" aria-describedby="basic-addon1">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">
+                        <i class="fas fa-search"></i>
+                    </span>
+                  </div>
+                </div>
+            </div>
+        </div>
         <section class="pilih-product mt-5 mb-5">
             <h3><strong>Products</strong></h3>
             <div class="row mt-4">
@@ -33,6 +47,15 @@
                     </div>
                 </div>
                 @endforeach
+                <div class="container mt-4">
+                    <div class="row">
+                        <div class="col">
+                            <div class="d-flex justify-content-center">
+                                {{ $products->links() }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
