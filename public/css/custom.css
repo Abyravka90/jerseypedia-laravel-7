@@ -1,0 +1,57 @@
+
+body {
+    background-color: white;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.banner img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.pilih-liga img{
+    max-height: 100px;
+}
+
+.pilih-liga .card{
+    border-radius: 15px;
+
+}
+
+.pilih-product .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pilih-product .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Memastikan semua card memiliki tinggi yang sama */
+}
+
+.pilih-product .card-body {
+    flex-grow: 1; /* Membuat card-body mengambil ruang yang tersedia */
+}
+
+.pilih-product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Menjaga gambar agar tetap proporsional */
+}
+
+.pilih-product .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Memastikan gambar, teks, dan tombol tidak bertumpuk */
+}
+
+.pilih-product .card {
+    min-height: 400px; /* Sesuaikan dengan kebutuhan */
+}
+
+.breadcrumb .active{
+    font-weight: bold;
+}
